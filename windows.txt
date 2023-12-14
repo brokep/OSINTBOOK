@@ -1,0 +1,69 @@
+Updated: January 1, 2023
+For use ONLY with Windows computers
+Full usage details are available in the book: https://inteltechniques.com/book1.html
+Please report any issues to errors@inteltechniques.com
+Copyright 2023 Michael Bazzell
+These instructions are provided 'as is' without warranty of any kind
+In no event shall the copyright holder be liable for any claim, damages or other liability
+Full license information and restrictions at https://inteltechniques.com/osintbook10/license.txt
+
+-------------------------------------------------------------------------------
+INSTALL CHOCOLATEY & APPLICATIONS
+-------------------------------------------------------------------------------
+(Menu > Type: cmd > right-click Command Prompt > Run as Administrator > Enter the following:)
+
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command " [System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+choco install -y curl
+choco install -y exiftool
+choco install -y exiftoolgui
+choco install -y ffmpeg 
+choco install -y firefox
+choco install -y git
+choco install -y googlechrome
+choco install -y googleearthpro
+choco install -y httrack
+choco install -y mediainfo
+choco install -y python3
+choco install -y ripgrep
+choco install -y sed
+choco install -y streamlink
+choco install -y tor-browser
+choco install -y unzip
+choco install -y vlc
+choco install -y wget
+choco install -y youtube-dl
+choco install -y yt-dlp
+
+(Reboot computer)
+
+-------------------------------------------------------------------------------
+CONFIGURE FIREFOX
+-------------------------------------------------------------------------------
+(Open Firefox, close it completely, and enter the following in Command Prompt:)
+
+cd %userprofile%\Downloads\
+curl -O https://inteltechniques.com/data/osintbook10/ff-template.zip
+unzip ff-template.zip
+cd %USERPROFILE%\AppData\Roaming\Mozilla\Firefox\Profiles\*.default-release
+xcopy /Y /E %userprofile%\Downloads\ff-template\*
+
+-------------------------------------------------------------------------------
+CONFIGURE CUSTOM SCRIPTS
+-------------------------------------------------------------------------------
+cd %userprofile%\Desktop
+curl -O https://inteltechniques.com/data/osintbook10/windows-files.zip
+curl -O https://inteltechniques.com/data/osintbook10/tools.zip
+unzip tools.zip -d %userprofile%\Desktop
+unzip windows-files.zip -d %userprofile%\Documents
+del windows-files.zip tools.zip
+
+-------------------------------------------------------------------------------
+ADD PROGRAMS TO DESKTOP (OPTIONAL)
+-------------------------------------------------------------------------------
+You can drag and drop the files within the Documents\windows-files\shortcuts folder anywhere you like, including another folder or the Desktop.
+
+-------------------------------------------------------------------------------
+APPLY UPDATES (ALSO AVAILABLE IN 'UPDATES' SCRIPT)
+-------------------------------------------------------------------------------
+choco upgrade all -y
