@@ -1,0 +1,304 @@
+Updated: January 1, 2023
+
+-------------------------------------------------------------------------------
+Leaks, Breaches, Logs, & Ransomware Commands
+-------------------------------------------------------------------------------
+sudo apt-get install ripgrep
+brew install ripgrep
+choco install ripgrep
+
+-------------------------------------------------------------------------------
+Data Leaks Commmands
+-------------------------------------------------------------------------------
+cd ~/Downloads/USVoterData_BF/data/Florida/2018/Voters
+cat * > Voter-FL-2018.txt
+cd ~/Downloads
+rg -a -F -i -N Williamson Voter-FL-2018.txt
+sed -i 's/    /:/g' Voter-FL-2018.txt
+sed -i 's/::/:/g' Voter-FL.txt
+rg -aFiN Williamson Voter-FL-2018.txt
+rg -aFiN Test@Gmail.com
+rg -aiN Test@Gmail.com
+rg -aFN Test@Gmail.com
+rg -aFi  Test@Gmail.com
+rg --help
+rg -aFiN @gmail.com
+rg -aFiN rita@gmail.com
+cd ~/Downloads/USVoterData_BF/data/Florida/2013
+cat * > Voter-FL-2013.txt
+mv Voter-FL-2013.txt ~/Downloads
+cd ~/Downloads/USVoterData_BF/data/Florida/2018/Voters
+cat * > Voter-FL-2018.txt
+mv Voter-FL-2018.txt ~/Downloads
+cd ~/Downloads/USVoterData_BF/data/Florida/2021/Voters
+cat * > Voter-FL-2021.txt
+mv Voter-FL-2021.txt ~/Downloads
+cd ~/Downloads
+cat Voter-FL-2* > Voter-FL-All.txt
+sort -u -b -i -f Voter-FL-All.txt > Voter-FL-All-Cleaned.txt
+sed -i 's/    /:/g' Voter-FL-All-Cleaned.txt
+sed -i 's/::/:/g' Voter-FL-All-Cleaned.txt
+cd ~/Downloads/USVoterData_BF/data/Colorado/2021
+cut -d, -f4,5,20,23,29,37 *.txt > Voter-CO-2021.csv
+LC_ALL=C cut -d, -f4,5,20,23,29,37 *.txt > Voter-CO-2021.csv
+LC_ALL=C sed -i "s/[\"]//g" Voter-CO-2021.txt
+cd ~/Downloads
+rg -aFiN bazzell SSDI.txt
+rg -aFiN 6185551212
+rg -aFiN 618-555-1212
+cat * > SpecialK.txt
+cd ~/Downloads
+rg -aFiN robynsnest2006@yahoo.com SpecialK.txt
+rg -a -F -i -N mikenap115 SnapChat.txt
+rg -a -F -i -N 30351923XX SnapChat.txt
+cd ~/Downloads/Programs
+git clone https://github.com/AmIJesse/Elasticsearch-Crawler.git
+cd Elasticsearch-Crawler
+pip install nested-lookup
+cd ~/Downloads/Programs/Elasticsearch-Crawler
+python crawl.py
+cd ~/Downloads/Programs/Elasticsearch-Crawler
+git pull https://github.com/AmIJesse/Elasticsearch-Crawler.git
+pip install internetarchive
+cd ~/Desktop
+ia search 'collection:giganews' -i > giganews1.txt
+ia search 'collection:usenethistorical -i > usenethistorical1.txt
+ia download --itemlist giganews1.txt --glob="*.csv.gz"
+gunzip -r .
+find . -type f -name \*.csv -print0 | xargs -0 cut -f1,3,4,5 > Giganews2.txt
+ia download --itemlist usenethistorical1.txt --glob="*.zip"
+find . -name "*.zip" -exec unzip {} \;
+rg -aFiN "From: " > UsenetHistorical2.txt
+sort -u -f Giganews2.txt UsenetHistorical2.txt > UsenetFinal.txt
+rg -aFiN bazzell UsenetFinal.txt
+sudo apt-get install jq
+brew install jq
+chocolatey install jq
+Cd ~/Downloads
+jq --raw-output '"\(.data.first_name),\(.data.last_name),\(.data.gender),\(.data.birth_year),\(.data.birth_date),\(.data.linkedin_username),\(.data.facebook_id),\(.data.twitter_username),\( .data.work_email),\(.data.mobile_phone)"' people.json > people.txt
+
+-------------------------------------------------------------------------------
+Data Beaches Commands
+-------------------------------------------------------------------------------
+rg -aFiN janewilson@microsoft.com linkedin_users.txt
+rg -aFiN 1288635 linkedin_users.txt
+./query michaelbazzell@gmail.com
+./query michael.bazzell@gmail.com
+./query michael.bazzell
+rg -aFiN mikewilson@microsoft.com
+rg -aFiN bigbucks55
+rg -aFiN @altonpolice.com
+rg -aFiN verybad1234
+rg -aFiN 14FDF540E39F0F154C8D0B3BD82ACE100B779DFA
+rg -aFiN stillverybad1234
+sudo -H pip install search-that-hash -I
+sth --text "5f4dcc3b5aa765d61d8327deb882cf99"
+cut -d, -f1,6,7,8,10,11,13,15,16,29 dogforum.sk.sql > DogForum.txt
+sed -i ''s/(crtl-v-tab)//g"  DogForum-Cleaned.txt
+sudo -H pip install h8mail -I
+cd ~/Downloads && h8mail -g
+sed -i 's/\;leak\-lookup\_pub/leak\-lookup\_pub/g' h8mail_config.ini
+h8mail -t bill@microsoft.com
+cd '/media/osint/1TBExternal/'
+rg -aFIN johndoe1287@gmail.com
+rg -aFIN H8teful0ne45
+rg -aFIN 9EF0EC63E2E52320CB20E345DCBA8112
+rg -aFIN D15FB15C1BC88F4B7932FD29918D1E9E9BBE7CA5
+rg -aFIN 37A790A268B9FE62B424BABFC3BCAB0646BFB24B93EC1619AAE7289E0D7086DB
+
+-------------------------------------------------------------------------------
+Stealer Logs Commands
+-------------------------------------------------------------------------------
+sudo apt install telegram-desktop
+find . 'passwords.txt' -exec cat {} \; > ~/Downloads/passwords.txt
+find . -iname 'passwords.txt' -exec cat {} \; > ~/Downloads/Passwords.txt
+find . -iname 'passwords*' -exec cat {} \; > ~/Downloads/Passwords.txt
+find . -iname 'importantautofills.txt' -exec cat {} \; > ~/Downloads/ImportantAutofills.txt
+timestamp=$(date +%Y-%m-%d) && find . -iname 'passwords.txt' -exec cat {} \; > ~/Downloads/Passwords.$timestamp.txt
+
+timestamp=$(date +%Y-%m-%d-%H-%M)
+cd ~/Downloads/Telegram\ Desktop
+for file in *; do /Applications/Keka.app/Contents/MacOS/Keka --ignore-file-access -x --cli 7z x "$file" -aou -p$pass -r -ssc- '*passwords*'; done
+find . -type f -iname '*passwords*' -exec cat {} \; > ~/Downloads/Passwords.$timestamp.txt
+
+-------------------------------------------------------------------------------
+Ransomware Commands
+-------------------------------------------------------------------------------
+cut -d, -f1,2,3,4,6,17,27,31 data.csv > data-cleaned.txt
+LC_ALL=C gsort -u -b -i -f  data-cleaned.txt > Data-Final.txt
+sed -i 's/  / /g' Data-Final.txt
+
+-------------------------------------------------------------------------------
+Data Search Script
+-------------------------------------------------------------------------------
+
+#!/bin/bash
+clear
+COLUMNS=12
+PS3='Selection: '
+options=(
+"Business Records Search" 
+"COMB Email Search" 
+"COMB Term Search" 
+"Databases Search (Files)" 
+"Databases Search (Content)" 
+"Databases Search (File & Content)" 
+"Domains Search" 
+"Hashes Search" 
+"International Search" 
+"Logs Search (Full)" 
+"Logs Search (Pass)" 
+"Logs Extract"  
+"People Search"
+"Ransomware Search"
+"Voter Search"
+"All Search (Files)"
+"All Search (Content)"
+"All Search (Files & Content)"
+)
+select opt in "${options[@]}"
+do
+case $opt in
+"Business Records Search")
+cd /Volumes/4TBData/Business
+echo "Enter Search Terms: "
+read data
+rg -aFiN $data
+;;
+"COMB Email Search")
+cd /Volumes/4TBData/COMB
+echo "Enter Email Address: "
+read data
+bash ./query.sh $data
+;;
+"COMB Term Search")
+cd /Volumes/4TBData/COMB
+echo "Enter Search Term: "
+read data
+rg -aFiN $data
+;;
+"Databases Search (Files)")
+echo "Enter Partial File Name: "
+read data
+find /Volumes/4TBData/Databases | grep -i $data
+;;
+"Databases Search (Content)")
+cd /Volumes/4TBData/Databases
+echo "Enter Search Term: "
+read data
+rg -aFiN $data
+;;
+"Databases Search (File & Content)")
+cd /Volumes/4TBData/Databases
+echo "Enter Full File Name: "
+read data
+echo "Enter Content: "
+read data2
+rg -aFiN $data2 $data
+;;
+"Domains Search")
+cd /Volumes/4TBData/Domains
+echo "Enter Search Term: "
+read data
+rg -aFiN $data
+;;
+"Hashes Search")
+cd /Volumes/4TBData/Hashes
+echo "Enter Hash or Password: "
+read data
+rg -aFiN $data
+;;
+"International Search")
+cd /Volumes/4TBData/International
+echo "Enter Search Term: "
+read data
+rg -aFiN $data
+;;
+"Logs Search (Full)")
+cd /Volumes/4TBData/Logs-Full
+echo "Enter Search Term: "
+read data
+rg -aFiNA 2 $data
+;;
+"Logs Search (Pass)")
+cd /Volumes/4TBData/Logs-Pass
+echo "Enter Search Term: "
+read data
+rg -aFiNA 2 $data
+;;
+"Logs Extract")
+timestamp=$(date +%Y-%m-%d)
+cd ~/Downloads/
+echo "Decompress all files in ~/Downloads/ and press enter."
+read data
+find . -iname 'passwords*' -exec cat {} \; > ~/Downloads/Passwords.$timestamp.txt
+;;
+"People Search")
+cd /Volumes/4TBData/People
+echo "Enter Search Term: "
+read data
+rg -aFiN $data
+;;
+"Ransomware Search")
+cd /Volumes/4TBData/Ransomware
+echo "Enter Search Term: "
+read data
+rg -aFiN $data
+;;
+"Voter Search")
+cd /Volumes/4TBData/Voter
+echo "Enter Search Term: "
+read data
+rg -aFiN $data
+;;
+"All Search (Files)")
+echo "Enter Partial File Name: "
+read data
+find /Volumes/4TBData | grep -i $data
+;;
+"All Search (Content)")
+cd /Volumes/4TBData
+echo "Enter Search Term: "
+read data
+rg -aFiN $data
+;;
+"All Search (File & Content)")
+cd /Volumes/4TBData
+echo "Enter Full File Name: "
+read data
+echo "Enter Content: "
+read data2
+rg -aFiN $data2 $data
+;;
+esac
+done
+
+-------------------------------------------------------------------------------
+Data Cleansing
+-------------------------------------------------------------------------------
+Replace "OLD" with "NEW": sed -i 's/OLD/NEW/g' data.txt
+Replace all commas with a hyphen: sed -i 's/\,/\-/g' data.txt
+Replace all tabs with a comma: sed -i 's/[strike ctrl-v-tab]/\,/g' data.txt
+Remove all data until the first comma: sed -i 's/^\([^,]*,\)//g' data.txt
+Remove all data until the first colon: sed -i 's/^[^:]*://g' data.txt
+Remove all single quotes: sed -i ' s/\'//g' data.txt
+Remove all double quotes: sed -i 's/\"//g' data.txt
+Remove "junk": sed -i 's/junk//g' data.txt
+Remove all between "FIRST" & "THIRD": sed -i 's/\(FIRST\).*\(THIRD\)/\1\2/' data.txt
+Remove all digits between commas: sed -i 's/\,[0-9]*\,//g' data.txt
+Remove any line beginning with "TEST": sed -i '/^TEST/d' data.txt
+Remove any line not containing "@": awk '/@/' data.txt > newfile.txt
+Remove empty lines: "@": sed -i "' '/^$/d" data.txt
+Remove first 10 lines: sed -i '1,10d' data.txt
+Remove first ten characters: sed -i 's/^.\{10\}//' data.txt
+Remove everything after the last "_": sed -i "s/_[^_]*$//" data.txt
+Remove 0000-00-00 00:00:00 : sed -i 's/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] [0-9][0-9]:[0-9][0-9]:[0-9][0-9]//g' data.txt
+Remove duplicate rows: awk '!seen[$0]++' data.txt > newfile.txt
+Remove duplicate rows and sort: LC_ALL=C sort -u -b -i -f  data.txt > newfile.txt
+Remove data between "{" and "}": sed -i 's/{[^}]*}//g' data.txt
+Extract Emails: grep -E -o "\b[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+\b" < data.txt > newfile.txt
+Split large file into multiple files: split -l 200000000 data.txt 1
+Display total lines in a file: wc -l data.txt
+Cut columns 1, 2, and 6: LANG=C cut -d, -f1,2,6 data.txt > newfile.txt
+Remove hyphens from phone numbers: sed -i 's/\([0-9]\{3,\}\)-/\1/g' data.txt
+Cut columns from JSON: jq --raw-output '"\(.email)\(.password),"' data.json > newfile.txt

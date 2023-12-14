@@ -1,0 +1,292 @@
+Updated: January 1, 2023
+For use ONLY with macOS computers
+Full usage details are available in the book: https://inteltechniques.com/book1.html
+Please report any issues to errors@inteltechniques.com
+Copyright 2023 Michael Bazzell
+These instructions are provided 'as is' without warranty of any kind
+In no event shall the copyright holder be liable for any claim, damages or other liability
+Full license information and restrictions at https://inteltechniques.com/osintbook10/license.txt
+
+-------------------------------------------------------------------------------
+INSTALL HOST APPLICATIONS (CHAPTER ONE)
+-------------------------------------------------------------------------------
+softwareupdate --install-rosetta --agree-to-license
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install --cask taskexplorer
+brew install --cask knockknock
+brew analytics off
+brew install clamav
+sudo mkdir /usr/local/sbin
+sudo chown -R `whoami`:admin /usr/local/sbin
+brew link clamav
+cd /opt/homebrew/etc/clamav/
+(If that failed, use:) cd /usr/local/etc/clamav/
+cp freshclam.conf.sample freshclam.conf
+sed -ie 's/^Example/#Example/g' freshclam.conf
+freshclam -v
+clamscan -r -i /
+clamscan -i -r --remove=yes /
+
+-------------------------------------------------------------------------------
+INSTALL APPLICATIONS (CHAPTER SIX)
+-------------------------------------------------------------------------------
+softwareupdate --install-rosetta --agree-to-license
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install exiftool
+brew install ffmpeg
+brew install fileicon
+brew install git
+brew install httrack
+brew install internetarchive
+brew install libmagic
+brew install mat2
+brew install name-that-hash search-that-hash
+brew install phantomjs
+brew install pipx 
+brew install ripgrep
+brew install streamlink
+brew install wget
+brew install yt-dlp 
+brew install youtube-dl
+brew install zenity
+brew install --cask firefox google-chrome tor-browser
+brew install --cask google-earth-pro
+brew install --cask mediainfo
+brew install --cask vlc
+brew install --cask xquartz
+brew tap caffix/amass && brew install amass
+brew autoremove
+brew cleanup -s
+rm -rf "$(brew --cache)"
+brew doctor
+brew missing
+
+-------------------------------------------------------------------------------
+CONFIGURE FIREFOX (CHAPTER SIX)
+-------------------------------------------------------------------------------
+(Open Firefox and completely close [Quit] it)
+cd ~/Desktop
+curl -O https://inteltechniques.com/data/osintbook10/ff-template.zip
+unzip ff-template.zip && cd ff-template
+cp -R * ~/Library/Application\ Support/Firefox/Profiles/*.default-release
+cd ~/Desktop && rm -rf ff-template __MACOSX ff-template.zip
+
+-------------------------------------------------------------------------------
+CONFIGURE CUSTOM TOOLS & SCRIPTS (CHAPTER SIX)
+-------------------------------------------------------------------------------
+cd ~/Desktop
+curl -O https://inteltechniques.com/data/osintbook10/tools.zip
+unzip tools.zip -d ~/Desktop/
+curl -O https://inteltechniques.com/data/osintbook10/mac-files.zip
+unzip mac-files.zip -d ~/Desktop/
+mkdir ~/Documents/scripts && mkdir ~/Documents/icons
+cd ~/Desktop/mac-files/scripts && cp * ~/Documents/scripts
+cd ~/Desktop/mac-files/icons && cp * ~/Documents/icons
+cd ~/Desktop && rm -rf mac-files.zip tools.zip ff-template.zip mac-files __MACOSX
+
+-------------------------------------------------------------------------------
+INSTALL OSINT APPLICATIONS (CHAPTER SIX)
+-------------------------------------------------------------------------------
+sudo python3 -m ensurepip
+sudo pip3 install -U pip
+sudo pip3 install instaloader
+sudo pip3 install instalooter
+sudo pip3 install toutatis
+mkdir ~/Downloads/Programs && cd ~/Downloads/Programs
+git clone https://github.com/Datalux/Osintgram.git
+cd Osintgram && sudo pip3 install -r requirements.txt
+sudo pip3 install gallery-dl
+cd ~/Downloads/Programs
+git clone https://github.com/sherlock-project/sherlock.git
+cd sherlock && sudo pip3 install -r requirements.txt
+sudo pip3 install socialscan
+sudo pip3 install holehe
+cd ~/Downloads/Programs
+git clone https://github.com/WebBreacher/WhatsMyName.git
+cd WhatsMyName/whatsmyname
+sudo pip3 install -r requirements.txt
+cd ~/Downloads/Programs
+git clone https://github.com/p1ngul1n0/blackbird
+cd blackbird && sudo pip3 install -r requirements.txt
+sudo pip3 install maigret
+cd ~/Downloads/Programs
+git clone https://github.com/martinvigo/email2phonenumber.git
+cd email2phonenumber && sudo pip3 install -r requirements.txt
+pipx ensurepath
+pipx install ghunt && pipx ensurepath
+cd ~/Downloads/Programs
+git clone https://github.com/aboul3la/Sublist3r.git
+cd Sublist3r && sudo pip3 install -r requirements.txt
+cd ~/Downloads/Programs
+git clone https://github.com/s0md3v/Photon.git
+cd Photon && sudo pip3 install -r requirements.txt
+cd ~/Downloads/Programs
+git clone https://github.com/laramies/theHarvester.git
+cd theHarvester && sudo pip3 install -r requirements.txt
+sudo pip3 install testresources
+sudo pip3 install webscreenshot
+cd ~/Downloads/Programs
+git clone https://github.com/Lazza/Carbon14
+cd Carbon14 && sudo pip3 install -r requirements.txt
+sudo pip3 install xeuledoc
+cd ~/Downloads/Programs
+git clone https://github.com/GuidoBartoli/sherloq.git
+cd sherloq/gui && sudo pip3 install -r requirements.txt
+cd ~/Downloads/Programs
+git clone https://github.com/opsdisk/metagoofil.git
+cd metagoofil && sudo pip3 install -r requirements.txt
+sudo pip3 install bdfr
+sudo pip3 install redditsfinder
+cd ~/Downloads/Programs
+git clone https://github.com/MalloyDelacroix/DownloaderForReddit.git
+cd DownloaderForReddit && sudo pip3 install -r requirements.txt
+sudo pip3 install waybackpy
+sudo pip3 install changedetection.io
+sudo pip3 install archivebox
+mkdir ~/Documents/archivebox && cd ~/Documents/archivebox
+archivebox init
+cd ~/Downloads/Programs
+git clone https://github.com/smicallef/spiderfoot.git
+cd spiderfoot && sudo pip3 install -r requirements.txt
+cd ~/Downloads/Programs
+git clone https://github.com/lanmaster53/recon-ng.git
+cd recon-ng && sudo pip3 install -r REQUIREMENTS
+cd ~/Downloads/Programs
+git clone https://github.com/AmIJesse/Elasticsearch-Crawler.git
+sudo pip3 install h8mail
+cd ~/Downloads && h8mail -g
+sed -i '' 's/\;leak\-lookup\_pub/leak\-lookup\_pub/g' h8mail_config.ini
+
+-------------------------------------------------------------------------------
+APPLY ICONS TO SCRIPTS (CHAPTER SIX)
+-------------------------------------------------------------------------------
+cd ~/Documents/scripts
+fileicon set API\ Tool ~/Documents/icons/api.png
+fileicon set Archives\ Tool ~/Documents/icons/archives.png
+fileicon set Breaches-Leaks\ Tool ~/Documents/icons/breaches-leaks.png
+fileicon set Captures\ Tool ~/Documents/icons/captures.png
+fileicon set Documents\ Tool ~/Documents/icons/documents.png
+fileicon set Domains\ Tool ~/Documents/icons/domains.png
+fileicon set Galleries\ Tool ~/Documents/icons/galleries.png
+fileicon set Instagram\ Tool ~/Documents/icons/instagram.png
+fileicon set Metadata\ Tool ~/Documents/icons/metadata.png
+fileicon set Recon-NG ~/Documents/icons/recon-ng.png
+fileicon set Reddit\ Tool ~/Documents/icons/reddit.png
+fileicon set Spiderfoot ~/Documents/icons/spiderfoot.png
+fileicon set OSINT\ Tools ~/Documents/icons/tools.png
+fileicon set Updates ~/Documents/icons/updates.png
+fileicon set Users-Emails\ Tool ~/Documents/icons/users-emails.png
+fileicon set Video\ Download\ Tool ~/Documents/icons/video-download.png
+fileicon set Video\ Stream\ Tool ~/Documents/icons/video-stream.png
+fileicon set Video\ Utilities ~/Documents/icons/video-utilities.png
+
+-------------------------------------------------------------------------------
+AUTHORIZE SCRIPTS TO LAUNCH (CHAPTER SIX)
+-------------------------------------------------------------------------------
+(Only applies to OS's older than Monterey)
+
+Open the Documents/scripts folder within Finder
+Right-click each script and select 'Open' (or highlight all and right-click > 'Open')
+Confirm the authority to open these scripts
+Close any windows which open
+
+-------------------------------------------------------------------------------
+ADD PROGRAMS TO DOCK & MODIFY SIZE (CHAPTER SIX)
+-------------------------------------------------------------------------------
+ln -s ~/Documents/scripts/ /Applications/
+defaults write com.apple.dock show-recents -bool FALSE
+defaults write com.apple.dock tilesize -int 32
+defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Firefox.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Google Chrome.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Tor Browser.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Utilities/Terminal.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Updates</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/OSINT Tools</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Video Download Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Video Utilities</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Video Stream Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Instagram Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Galleries Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Users-Emails Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Captures Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Domains Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Metadata Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Archives Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Documents Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Breaches-Leaks Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Reddit Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Spiderfoot</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/Recon-NG</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/scripts/API Tool</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Google Earth Pro.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/System Settings.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+killall Dock
+
+-------------------------------------------------------------------------------
+APPLY UPDATES (CHAPTER SIX)
+-------------------------------------------------------------------------------
+brew update && brew upgrade && brew upgrade --greedy
+brew autoremove && brew cleanup -s && rm -rf "$(brew --cache)"
+brew doctor && brew missing
+sudo pip3 install -U pip 2>/dev/null
+sudo pip3 install -U changedetection.io 2>/dev/null
+sudo pip3 install -U instaloader 2>/dev/null
+sudo pip3 install -U toutatis 2>/dev/null
+cd ~/Downloads/Programs/Osintgram
+git pull https://github.com/Datalux/Osintgram.git
+sudo pip3 install -r requirements.txt 2>/dev/null
+sudo pip3 install -U gallery-dl 2>/dev/null
+cd ~/Downloads/Programs/sherlock
+git pull https://github.com/sherlock-project/sherlock.git
+sudo pip3 install -r requirements.txt 2>/dev/null
+sudo pip3 install -U socialscan 2>/dev/null
+sudo pip3 install -U holehe 2>/dev/null
+cd ~/Downloads/Programs/WhatsMyName
+git pull https://github.com/WebBreacher/WhatsMyName.git
+cd whatsmyname && sudo pip3 install -r requirements.txt 2>/dev/null
+cd ~/Downloads/Programs/blackbird
+git pull https://github.com/p1ngul1n0/blackbird
+sudo pip3 install -r requirements.txt 2>/dev/null
+cd ~/Downloads/Programs/email2phonenumber
+git pull https://github.com/martinvigo/email2phonenumber.git
+sudo pip3 install -r requirements.txt 2>/dev/null
+pipx upgrade ghunt
+cd ~/Downloads/Programs/Sublist3r
+git pull https://github.com/aboul3la/Sublist3r.git
+sudo pip3 install -r requirements.txt 2>/dev/null
+cd ~/Downloads/Programs/Photon
+git pull https://github.com/s0md3v/Photon.git
+sudo pip3 install -r requirements.txt 2>/dev/null
+cd ~/Downloads/Programs/theHarvester
+git pull https://github.com/laramies/theHarvester.git
+sudo pip3 install -r requirements.txt 2>/dev/null
+cd ~/Downloads/Programs/Carbon14
+git pull https://github.com/Lazza/Carbon14
+sudo pip3 install -r requirements.txt 2>/dev/null
+sudo pip3 install -U xeuledoc 2>/dev/null
+cd ~/Downloads/Programs/sherloq
+git pull https://github.com/GuidoBartoli/sherloq.git
+cd gui && sudo pip3 install -r requirements.txt 2>/dev/null
+cd ~/Downloads/Programs/metagoofil
+git pull https://github.com/opsdisk/metagoofil.git
+sudo pip3 install -r requirements.txt 2>/dev/null
+sudo pip3 install -U bdfr 2>/dev/null
+sudo pip3 install -U redditsfinder 2>/dev/null
+cd ~/Downloads/Programs/DownloaderForReddit
+git pull https://github.com/MalloyDelacroix/DownloaderForReddit.git
+sudo pip3 install -r requirements.txt 2>/dev/null
+sudo pip3 install -U waybackpy 2>/dev/null
+sudo pip3 install -U changedetection.io 2>/dev/null
+sudo pip3 install -U archivebox
+cd ~/Downloads/Programs/spiderfoot
+git pull https://github.com/smicallef/spiderfoot.git
+sudo pip3 install -r requirements.txt 2>/dev/null
+cd ~/Downloads/Programs/recon-ng
+git pull https://github.com/lanmaster53/recon-ng.git
+sudo pip3 install -r REQUIREMENTS 2>/dev/null
+cd ~/Downloads/Programs/Elasticsearch-Crawler
+git pull https://github.com/AmIJesse/Elasticsearch-Crawler.git
+sudo pip3 install -U nested-lookup 2>/dev/null
+sudo pip3 install -U h8mail 2>/dev/null
+

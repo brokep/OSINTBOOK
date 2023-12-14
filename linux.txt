@@ -1,0 +1,641 @@
+Updated: Updated: April 17, 2023
+For use ONLY with a new Ubuntu 22.04 install
+Some commands apply to VirtualBox but will not harm VMWare and others
+These will assist with the creation of your custom machine and will be updated as things change
+Full usage details are available in the book: https://inteltechniques.com/book1.html
+Slight variations may be present for Windows/Mac users (such as 'Next' vs. 'Continue')
+Please report any issues to errors@inteltechniques.com
+Copyright 2023 Michael Bazzell
+These instructions are provided 'as is' without warranty of any kind
+In no event shall the copyright holder be liable for any claim, damages or other liability
+Full license information and restrictions at https://inteltechniques.com/osintbook10/license.txt
+Installation script at https://inteltechniques.com/osintbook10/linux.sh 
+
+-------------------------------------------------------------------------------
+LINUX HOST CONFIGURATION (CHAPTER ONE-HOST ONLY!)
+-------------------------------------------------------------------------------
+sudo apt update
+sudo apt install -y clamav clamav-daemon
+sudo systemctl stop clamav-freshclam
+sudo freshclam
+sudo systemctl start clamav-freshclam
+clamscan -r -i /
+clamscan -r -i --remove=yes /
+sudo apt purge -y apport apport-symptoms popularity-contest ubuntu-report whoopsie
+sudo apt autoremove -y
+sudo apt install bleachbit
+
+-------------------------------------------------------------------------------
+VIRTUALBOX VM CREATION (CHAPTER TWO)
+-------------------------------------------------------------------------------
+Install, configure, and launch VirtualBox
+Download Ubuntu 22.04 Desktop from https://releases.ubuntu.com/22.04/
+Within VirtualBox, click on the button labeled 'New' or "Machine" > "New"
+Provide a name of 'OSINT Original'
+Choose your desired location to save the machine on your host
+Select 'Linux' as the type, and 'Ubuntu 64-bit' as the version
+Click Continue
+In the Memory size window, move the slider to select 50% of your system memory
+Click Continue
+Click Create
+Leave the hard disk file type as VDI and click Continue
+Select the default option of 'Dynamically allocated' and click Continue
+Choose the desired size of your virtual hard drive (40GB+)
+Click Create
+Click the Settings icon
+Click the Storage icon
+Click the CD icon which displays 'Empty' in the left menu
+Click the small blue circle to the far right in the 'Optical Drive' option
+Select 'Choose a Disk File'
+Select the Ubuntu 22.04 ISO downloaded previously
+Click 'Open' or Choose' if prompted
+Click 'OK'
+If prompted, confirm the Ubuntu iso
+Click 'Start' in the main menu
+Click 'Start' again if prompted
+Select 'Try or Install Ubuntu'
+Select 'Install Ubuntu'
+Select your desired language and location, then click 'Continue'
+Select 'Normal Installation', 'Download Updates', and 'Install third party'
+Click 'Continue'
+Select 'Erase disk and install Ubuntu', then 'Install Now'. Confirm with 'Continue'
+Choose your desired time zone and click 'Continue'
+Choose a name, user name, computer name, and password of 'osint' for each
+Select 'Log in automatically' then 'Continue'
+Allow Ubuntu to complete the installation, and reboot
+Strike "Enter" when prompted to reboot
+
+-------------------------------------------------------------------------------
+VIRTUALBOX VM CONFIGURATION (CHAPTER TWO)
+-------------------------------------------------------------------------------
+Click 'Skip'
+Select 'No' and then 'Next' when asked to help improve Ubuntu
+Click 'Next' then 'Done' to remove the welcome screen
+If prompted to install updates, click 'Remind me later'
+In the VirtualBox Menu, select Devices > 'Insert Guest Additions CD Image'
+Double click the CD icon in the dock
+Right-click on the file autorun.sh and select 'run as program'
+Provide your password when prompted
+Once the process is complete, press enter, and power off the VM (Upper right menu)
+In VirtualBox, select your VM and click 'Settings'
+In the 'General' icon, click on the 'Advanced' tab
+Change 'Shared clipboard' and Drag n Drop' to 'Bidirectional'
+In the 'Display' icon, change the Video Memory to the maximum
+In the 'Shared Folders' icon, click the green '+'
+Click the dropdown menu under 'Folder Path'
+Select 'Other'
+Choose a desired folder on your host to share data and click 'Open'
+Select the 'Auto-mount' option and then 'OK'
+Click 'OK' to close the settings window
+Start the VM, Open Terminal, and execute the following
+sudo adduser osint vboxsf
+sudo apt purge -y apport apport-symptoms popularity-contest ubuntu-report whoopsie
+sudo apt autoremove -y
+Restart your Ubuntu VM
+Resize the window if desired
+Resize the VM if desired (View > Virtual Screen > Scale)
+In the left dock, right-click and eject the CD
+Click the Applications Menu (9 dots) in the lower left and launch Settings
+Click 'Notifications' and disable both options
+Click the 'Privacy' option, then click 'Screen Lock' and disable all options
+Click 'File History & Trash', then disable the option
+Click 'Diagnostics', then change to 'Never'
+Click the back arrow and click Power, changing 'Blank Screen' to 'Never'
+Click 'Automatic Suspend' and disable the feature
+Close all Settings windows
+Click the Applications Menu and launch Software Updater
+Click 'Install Now' to apply all updates
+If prompted, restart the VM
+
+-------------------------------------------------------------------------------
+VIRTUALBOX MAINTENANCE (CHAPTER TWO)
+-------------------------------------------------------------------------------
+Some readers have reported the inability to resize VM windows within VirtualBox with the "Auto-resize Guest Display" greyed out. The following commands within Terminal of the Linux VM should repair. There is no harm running these if you are unsure.
+
+sudo apt update
+sudo apt install -y build-essential dkms gcc make perl
+sudo rcvboxadd setup
+reboot
+
+-------------------------------------------------------------------------------
+BROWSER INSTALLATION (CHAPTER THREE)
+-------------------------------------------------------------------------------
+sudo snap remove --purge firefox
+sudo add-apt-repository -y ppa:mozillateam/ppa
+echo '
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1001
+' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+sudo apt install -y firefox
+
+Launch and then close Firefox, then execute the following:
+
+sudo apt update && sudo apt install -y curl  
+cd ~/Desktop 
+curl -O https://inteltechniques.com/data/osintbook10/ff-template.zip  
+unzip ff-template.zip -d ~/.mozilla/firefox/
+cd ~/.mozilla/firefox/ff-template/
+cp -R * ~/.mozilla/firefox/*.default-release
+cd ~/Desktop && rm ff-template.zip
+
+Open Firefox and update all add-ons, then install secondary browsers:
+
+sudo snap install chromium
+sudo apt install torbrowser-launcher -y
+
+-------------------------------------------------------------------------------
+OPTIONAL: BROWSER REBUILD (CHAPTER THREE)
+-------------------------------------------------------------------------------
+Close Firefox and execute the following within Terminal to delete the current profile and create a new build. This usually repairs missing bookmarks and extensions.
+
+cd ~/.mozilla/firefox/*.default-release
+rm -r *
+cd ~/Desktop
+curl -O https://inteltechniques.com/data/osintbook10/ff-template.zip
+unzip -o ff-template.zip -d ~/.mozilla/firefox/
+cd ~/.mozilla/firefox/ff-template/
+cp -R * ~/.mozilla/firefox/*.default-release
+cd ~/Desktop && rm ff-template.zip
+
+-------------------------------------------------------------------------------
+INSTALL OSINT TOOLS (CHAPTER FOUR)
+-------------------------------------------------------------------------------
+sudo apt update
+sudo apt install -y vlc
+sudo apt install -y ffmpeg
+sudo apt install -y python3-pip
+sudo pip install -U youtube-dl
+sudo pip install -U yt-dlp
+cd ~/Desktop
+sudo apt install -y curl
+curl -O https://inteltechniques.com/data/osintbook10/vm-files.zip
+unzip vm-files.zip -d ~/Desktop/
+mkdir ~/Documents/scripts && mkdir ~/Documents/icons
+cd ~/Desktop/vm-files/scripts && cp * ~/Documents/scripts
+cd ~/Desktop/vm-files/icons && cp * ~/Documents/icons
+cd ~/Desktop/vm-files/shortcuts && sudo cp * /usr/share/applications/
+cd ~/Desktop && rm vm-files.zip && rm -rf vm-files
+sudo apt install -y python3-venv
+mkdir ~/Downloads/Programs
+mkdir ~/Downloads/Programs/Streamlink
+cd ~/Downloads/Programs/Streamlink
+python3 -m venv streamlinkEnvironment
+source streamlinkEnvironment/bin/activate
+sudo pip install streamlink
+deactivate
+sudo apt install -y git
+mkdir ~/Downloads/Programs/Instalooter
+cd ~/Downloads/Programs/Instalooter
+python3 -m venv instalooterEnvironment
+source instalooterEnvironment/bin/activate
+sudo pip install instalooter
+deactivate
+mkdir ~/Downloads/Programs/Instaloader
+cd ~/Downloads/Programs/Instaloader
+python3 -m venv instaloaderEnvironment
+source instaloaderEnvironment/bin/activate
+sudo pip install instaloader
+deactivate
+mkdir ~/Downloads/Programs/Toutatis
+cd ~/Downloads/Programs/Toutatis
+python3 -m venv toutatisEnvironment
+source toutatisEnvironment/bin/activate
+sudo pip install toutatis
+deactivate
+cd ~/Downloads/Programs
+git clone https://github.com/Datalux/Osintgram.git
+cd Osintgram
+python3 -m venv OsintgramEnvironment
+source OsintgramEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+make setup
+sed -i 's/followinfnumbers/followingnumbers/g' ~/Documents/scripts/instagram.sh
+sudo apt install libncurses5-dev libffi-dev -y
+mkdir ~/Downloads/Programs/Gallery-DL
+cd ~/Downloads/Programs/Gallery-DL
+python3 -m venv gallerydlEnvironment
+source gallerydlEnvironment/bin/activate
+sudo pip install -U gallery-dl
+deactivate
+cd ~/Downloads
+sudo apt install default-jre -y
+wget https://github.com/ripmeapp/ripme/releases/latest/download/ripme.jar
+chmod +x ripme.jar
+cd ~/Downloads/Programs
+git clone https://github.com/sherlock-project/sherlock.git
+cd sherlock
+python3 -m venv SherlockEnvironment
+source SherlockEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+mkdir ~/Downloads/Programs/socialscan
+cd ~/Downloads/Programs/socialscan
+python3 -m venv socialscanEnvironment
+source socialscanEnvironment/bin/activate
+sudo pip install -U socialscan
+deactivate
+mkdir ~/Downloads/Programs/holehe
+cd ~/Downloads/Programs/holehe
+python3 -m venv holeheEnvironment
+source holeheEnvironment/bin/activate
+sudo pip install -U holehe
+deactivate
+cd ~/Downloads/Programs
+git clone https://github.com/WebBreacher/WhatsMyName.git
+cd WhatsMyName/whatsmyname
+python3 -m venv WhatsMyNameEnvironment
+source WhatsMyNameEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs
+git clone https://github.com/p1ngul1n0/blackbird
+cd blackbird
+python3 -m venv blackbirdEnvironment
+source blackbirdEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+mkdir ~/Downloads/Programs/Maigret
+cd ~/Downloads/Programs/Maigret
+python3 -m venv maigretEnvironment
+source maigretEnvironment/bin/activate
+sudo pip install maigret
+deactivate
+cd ~/Downloads/Programs
+git clone https://github.com/martinvigo/email2phonenumber.git
+cd email2phonenumber
+python3 -m venv email2phonenumberEnvironment
+source email2phonenumberEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+sudo pip install pipx
+pipx ensurepath
+pipx install ghunt
+pipx ensurepath
+cd ~/Downloads/Programs
+git clone https://github.com/FortyNorthSecurity/EyeWitness.git
+cd EyeWitness/Python/setup && sudo ./setup.sh
+cd ~/Documents/scripts
+sed -i 's/ChrisTruncer/FortyNorthSecurity/g' updates.sh
+cd ~/Downloads/Programs
+wget https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux-aarch64.tar.gz
+tar -xvzf geckodriver* && chmod +x geckodriver
+sudo mv geckodriver /usr/local/bin
+sudo snap install amass
+cd ~/Downloads/Programs
+git clone https://github.com/aboul3la/Sublist3r.git
+cd Sublist3r
+python3 -m venv Sublist3rEnvironment
+source Sublist3rEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs
+git clone https://github.com/s0md3v/Photon.git
+cd Photon
+python3 -m venv PhotonEnvironment
+source PhotonEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs
+git clone https://github.com/laramies/theHarvester.git
+cd theHarvester
+python3 -m venv theHarvesterEnvironment
+source theHarvesterEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+sudo pip install testresources
+sudo pip install webscreenshot
+cd ~/Downloads/Programs
+git clone https://github.com/Lazza/Carbon14
+cd Carbon14
+python3 -m venv Carbon14Environment
+source Carbon14Environment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+sudo apt install -y mediainfo-gui
+sudo apt install -y libimage-exiftool-perl
+sudo apt install -y mat2
+mkdir ~/Downloads/Programs/xeuledoc
+cd ~/Downloads/Programs/xeuledoc
+python3 -m venv xeuledocEnvironment
+source xeuledocEnvironment/bin/activate
+sudo pip install -U xeuledoc
+deactivate
+cd ~/Downloads/Programs
+sudo apt install subversion -y
+git clone https://github.com/GuidoBartoli/sherloq.git
+cd sherloq/gui
+python3 -m venv sherloqEnvironment
+source sherloqEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+sudo apt install -y httrack webhttrack
+sudo apt install -y libcanberra-gtk-module
+cd ~/Downloads/Programs
+git clone https://github.com/opsdisk/metagoofil.git
+cd metagoofil
+python3 -m venv metagoofilEnvironment
+source metagoofilEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+mkdir ~/Downloads/Programs/bdfr
+cd ~/Downloads/Programs/bdfr
+python3 -m venv bdfrEnvironment
+source bdfrEnvironment/bin/activate
+sudo pip install -U bdfr
+deactivate
+mkdir ~/Downloads/Programs/redditsfinder
+cd ~/Downloads/Programs/redditsfinder
+python3 -m venv redditsfinderEnvironment
+source redditsfinderEnvironment/bin/activate
+sudo pip install -U redditsfinder
+deactivate
+cd ~/Downloads/Programs
+git clone https://github.com/MalloyDelacroix/DownloaderForReddit.git
+cd DownloaderForReddit
+python3 -m venv DownloaderForRedditEnvironment
+source DownloaderForRedditEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb
+sudo apt install -y ./google-earth-stable_current_amd64.deb
+sudo rm google-earth-stable_current_amd64.deb
+sudo apt install -y kazam
+sudo apt install bleachbit
+sudo apt update --fix-missing
+sudo apt -y upgrade
+sudo apt --fix-broken install
+
+-------------------------------------------------------------------------------
+INSTALL SEARCH TOOLS
+-------------------------------------------------------------------------------
+cd ~/Desktop
+curl -O https://inteltechniques.com/data/osintbook10/tools.zip
+unzip tools.zip -d ~/Desktop/
+rm tools.zip
+rm -rf __MACOSX
+
+-------------------------------------------------------------------------------
+INSTALL OSINT TOOLS-ADVANCED
+-------------------------------------------------------------------------------
+mkdir ~/Downloads/Programs/waybackpy
+cd ~/Downloads/Programs/waybackpy
+python3 -m venv waybackpyEnvironment
+source waybackpyEnvironment/bin/activate
+sudo pip install -U waybackpy
+deactivate
+mkdir ~/Downloads/Programs/changedetection
+cd ~/Downloads/Programs/changedetection
+python3 -m venv changedetectionEnvironment
+source changedetectionEnvironment/bin/activate
+sudo pip install changedetection.io
+deactivate
+mkdir ~/Downloads/Programs/archivebox
+cd ~/Downloads/Programs/archivebox
+python3 -m venv archiveboxEnvironment
+source archiveboxEnvironment/bin/activate
+sudo pip install archivebox
+deactivate
+mkdir ~/Documents/archivebox
+cd ~/Documents/archivebox
+archivebox init
+cd ~/Downloads/Programs
+git clone https://github.com/smicallef/spiderfoot.git
+cd spiderfoot
+python3 -m venv spiderfootEnvironment
+source spiderfootEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs
+git clone https://github.com/lanmaster53/recon-ng.git
+cd recon-ng
+python3 -m venv recon-ngEnvironment
+source recon-ngEnvironment/bin/activate
+sudo pip install -r REQUIREMENTS
+deactivate
+sudo pip install -U openai-whisper
+mkdir ~/.cache/whisper
+cd ~/.cache/whisper
+wget https://openaipublic.azureedge.net/main/whisper/models/9ecf779972d90ba49c06d968637d720dd632c55bbf19d441fb42bf17a411e794/small.pt
+cd ~/Documents/scripts
+rm video-utilities.sh
+wget https://inteltechniques.com/data/osintbook10/video-utilities.sh
+chmod +x video-utilities.sh
+sed -i 's/cd \~\/Downloads\/Programs\/internetarchive/sudo pip install \-U openai\-whisper\ncd \~\/Downloads\/Programs\/internetarchive/g' updates.sh 
+
+-------------------------------------------------------------------------------
+INSTALL LEAKS, BREACHES, LOGS, & RANSOMWARE TOOLS
+-------------------------------------------------------------------------------
+mkdir ~/Downloads/Programs/internetarchive
+cd ~/Downloads/Programs/internetarchive
+python3 -m venv internetarchiveEnvironment
+source internetarchiveEnvironment/bin/activate
+sudo pip install -U internetarchive
+deactivate
+sudo apt install -y ripgrep
+cd ~/Downloads/Programs
+git clone https://github.com/AmIJesse/Elasticsearch-Crawler.git
+sudo pip install nested-lookup
+sudo apt install -y jq
+mkdir ~/Downloads/Programs/search-that-hash
+cd ~/Downloads/Programs/search-that-hash
+python3 -m venv search-that-hashEnvironment
+source search-that-hashEnvironment/bin/activate
+sudo pip install -U search-that-hash
+deactivate
+mkdir ~/Downloads/Programs/name-that-hash
+cd ~/Downloads/Programs/name-that-hash
+python3 -m venv name-that-hashEnvironment
+source name-that-hashEnvironment/bin/activate
+sudo pip install -U name-that-hash 2>/dev/null
+deactivate
+mkdir ~/Downloads/Programs/h8mail
+cd ~/Downloads/Programs/h8mail
+python3 -m venv h8mailEnvironment
+source h8mailEnvironment/bin/activate
+sudo pip install -U h8mail
+deactivate
+cd ~/Downloads
+h8mail -g
+sed -i 's/\;leak\-lookup\_pub/leak\-lookup\_pub/g' h8mail_config.ini
+
+-------------------------------------------------------------------------------
+USER INTERFACE CONFIGURATION
+-------------------------------------------------------------------------------
+gsettings set org.gnome.desktop.background picture-uri ''
+gsettings set org.gnome.desktop.background primary-color 'rgb(66, 81, 100)'
+gsettings set org.gnome.shell favorite-apps []
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+gsettings set org.gnome.shell favorite-apps "['firefox.desktop', 'chromium_chromium.desktop', 'torbrowser.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'updates.desktop', 'tools.desktop', 'video-download.desktop', 'video-utilities.desktop', 'video-stream.desktop', 'instagram.desktop', 'galleries.desktop', 'users-emails.desktop', 'captures.desktop', 'domains.desktop', 'metadata.desktop', 'archives.desktop', 'documents.desktop', 'breaches-leaks.desktop', 'reddit.desktop', 'spiderfoot.desktop', 'recon-ng.desktop', 'api.desktop', 'google-earth-pro.desktop', 'kazam.desktop', 'gnome-control-center.desktop']"
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 32
+
+-------------------------------------------------------------------------------
+SOFTWARE UPDATES
+-------------------------------------------------------------------------------
+sudo apt update
+sudo apt -y upgrade
+sudo snap refresh
+sudo apt update --fix-missing
+sudo apt --fix-broken install
+sudo pip install -U youtube-dl
+sudo pip install -U yt-dlp
+cd ~/Downloads/Programs/Streamlink
+source streamlinkEnvironment/bin/activate
+sudo pip install -U streamlink
+deactivate
+cd ~/Downloads/Programs/Instalooter
+source instalooterEnvironment/bin/activate
+sudo pip install -U instalooter
+deactivate
+cd ~/Downloads/Programs/Instaloader
+source instaloaderEnvironment/bin/activate
+sudo pip install -U instaloader
+deactivate
+cd ~/Downloads/Programs/Toutatis
+source toutatisEnvironment/bin/activate
+sudo pip install -U toutatis
+deactivate
+cd ~/Downloads/Programs/Osintgram
+git pull https://github.com/Datalux/Osintgram.git
+source OsintgramEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/Gallery-DL
+source gallerydlEnvironment/bin/activate
+sudo pip install -U gallery-dl
+deactivate
+cd ~/Downloads
+wget -N https://github.com/ripmeapp/ripme/releases/latest/download/ripme.jar
+chmod +x ripme.jar
+cd ~/Downloads/Programs/sherlock
+git pull https://github.com/sherlock-project/sherlock.git
+source SherlockEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/socialscan
+source socialscanEnvironment/bin/activate
+sudo pip install -U socialscan
+deactivate
+cd ~/Downloads/Programs/holehe
+source holeheEnvironment/bin/activate
+sudo pip install -U holehe
+deactivate
+cd ~/Downloads/Programs/WhatsMyName
+git pull https://github.com/WebBreacher/WhatsMyName.git
+cd whatsmyname
+source WhatsMyNameEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/blackbird
+git pull https://github.com/p1ngul1n0/blackbird
+source blackbirdEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/email2phonenumber
+git pull https://github.com/martinvigo/email2phonenumber.git
+source email2phonenumberEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+sudo pip install -U pipx
+pipx upgrade ghunt
+cd ~/Downloads/Programs/EyeWitness
+git pull https://github.com/FortyNorthSecurity/EyeWitness.git
+cd Python/setup
+sudo ./setup.sh
+cd ~/Downloads/Programs/Sublist3r
+git pull https://github.com/aboul3la/Sublist3r.git
+source Sublist3rEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/Photon
+git pull https://github.com/s0md3v/Photon.git
+source PhotonEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/theHarvester
+git pull https://github.com/laramies/theHarvester.git
+source theHarvesterEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+sudo pip install -U testresources
+sudo pip install -U webscreenshot
+cd ~/Downloads/Programs/Carbon14
+git pull https://github.com/Lazza/Carbon14
+source Carbon14Environment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/xeuledoc
+source xeuledocEnvironment/bin/activate
+sudo pip install -U xeuledoc
+deactivate
+cd ~/Downloads/Programs/sherloq
+git pull https://github.com/GuidoBartoli/sherloq.git
+cd gui
+source sherloqEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/metagoofil
+git pull https://github.com/opsdisk/metagoofil.git
+source metagoofilEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/bdfr
+source bdfrEnvironment/bin/activate
+sudo pip install -U bdfr
+deactivate
+cd ~/Downloads/Programs/redditsfinder
+source redditsfinderEnvironment/bin/activate
+sudo pip install -U redditsfinder
+deactivate
+cd ~/Downloads/Programs/DownloaderForReddit
+git pull https://github.com/MalloyDelacroix/DownloaderForReddit.git
+source DownloaderForRedditEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb
+sudo apt install -y ./google-earth-stable_current_amd64.deb
+sudo rm google-earth-stable_current_amd64.deb
+cd ~/Downloads/Programs/waybackpy
+source waybackpyEnvironment/bin/activate
+sudo pip install -U waybackpy
+deactivate
+cd ~/Downloads/Programs/changedetection
+source changedetectionEnvironment/bin/activate
+sudo pip install -U changedetection.io
+deactivate
+cd ~/Downloads/Programs/archivebox
+source archiveboxEnvironment/bin/activate
+sudo pip install -U archivebox
+deactivate
+cd ~/Downloads/Programs/spiderfoot
+git pull https://github.com/smicallef/spiderfoot.git
+source spiderfootEnvironment/bin/activate
+sudo pip install -r requirements.txt
+deactivate
+cd ~/Downloads/Programs/recon-ng
+git pull https://github.com/lanmaster53/recon-ng.git
+source recon-ngEnvironment/bin/activate
+sudo pip install -r REQUIREMENTS
+deactivate
+sudo pip install -U openai-whisper
+cd ~/Downloads/Programs/internetarchive
+source internetarchiveEnvironment/bin/activate
+sudo pip install -U internetarchive
+deactivate
+cd ~/Downloads/Programs/Elasticsearch-Crawler
+git pull https://github.com/AmIJesse/Elasticsearch-Crawler.git
+sudo pip install -U nested-lookup
+cd ~/Downloads/Programs/search-that-hash
+source search-that-hashEnvironment/bin/activate
+sudo pip install -U search-that-hash
+deactivate
+cd ~/Downloads/Programs/name-that-hash
+source name-that-hashEnvironment/bin/activate
+sudo pip install -U name-that-hash
+deactivate
+cd ~/Downloads/Programs/h8mail
+source h8mailEnvironment/bin/activate
+sudo pip install -U h8mail
+deactivate
+sudo apt autoremove -y

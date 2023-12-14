@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>IntelTechniques Blog</title>
+	<atom:link href="https://inteltechniques.com/blog/feed/" rel="self" type="application/rss+xml" />
+	<link>https://inteltechniques.com/blog</link>
+	<description></description>
+	<lastBuildDate>Fri, 23 Jun 2023 13:50:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2.2</generator>
+	<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 301</title>
+		<link>https://inteltechniques.com/blog/2023/06/23/the-privacy-security-osint-show-episode-301/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 23 Jun 2023 13:50:09 +0000</pubDate>
+				<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3581</guid>
+
+					<description><![CDATA[EPISODE 301-Self-Hosted 3: Calendars, Contacts, &#38; Notes This week I continue the Self-Hosting series with a discussion about Calendars, Contacts, and Notes. Direct support for this podcast comes from our privacy services, online training, and latest books. More details can be found at IntelTechniques.com. Thank you for keeping this show ad-free. Listen to THIS episode [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 301-Self-Hosted 3: Calendars, Contacts, &amp; Notes<br />
+</strong></p>
+<p>This week I continue the Self-Hosting series with a discussion about Calendars, Contacts, and Notes.</p>
+<p>Direct support for this podcast comes from our <a href="https://inteltechniques.com/services.html">privacy services</a>, <a href="https://www.inteltechniques.net/">online training</a>, and latest <a href="https://inteltechniques.com/books.html">books</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+<audio class="wp-audio-shortcode" id="audio-3581-1" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1547994979-user-98066669-301-self-hosted-3-calendars-contacts-notes.mp3?_=1" /><a href="https://feeds.soundcloud.com/stream/1547994979-user-98066669-301-self-hosted-3-calendars-contacts-notes.mp3">https://feeds.soundcloud.com/stream/1547994979-user-98066669-301-self-hosted-3-calendars-contacts-notes.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>System 76 Leak<br />
+<a href="https://inteltechniques.com/book7a.html">https://inteltechniques.com/book7a.html</a></p>
+<p><strong>SELF-HOSTED 3: CALENDARS, CONTACTS, &amp; NOTES:</strong></p>
+<p>https://www.etebase.com/<br />
+https://github.com/etesync/server<br />
+https://www.etesync.com/<br />
+https://standardnotes.com/help/self-hosting/getting-started<br />
+https://standardnotes.com/help/self-hosting/docker<br />
+https://www.cloudflare.com/products/tunnel/<br />
+https://tailscale.comhttps://github.com/juanfont/headscale<br />
+https://goteleport.com/<br />
+https://github.com/slackhq/nebula<br />
+https://www.zerotier.com/</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 300</title>
+		<link>https://inteltechniques.com/blog/2023/06/16/the-privacy-security-osint-show-episode-300/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 16 Jun 2023 13:37:58 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3579</guid>
+
+					<description><![CDATA[EPISODE 300-Self-Hosted 2: Offline Knowledge This week I continue the self-hosted series with several easy options from which anyone can benefit. Let's archive some powerful data for offline use. Direct support for this podcast comes from our privacy services, online training, and latest books. More details can be found at IntelTechniques.com. Thank you for keeping [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 300-Self-Hosted 2: Offline Knowledge<br />
+</strong></p>
+<p>This week I continue the self-hosted series with several easy options from which anyone can benefit. Let's archive some powerful data for offline use.</p>
+<p>Direct support for this podcast comes from our <a href="https://inteltechniques.com/services.html">privacy services</a>, <a href="https://www.inteltechniques.net/">online training</a>, and latest <a href="https://inteltechniques.com/books.html">books</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3579-2" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1541980267-user-98066669-300-self-hosted-2-offline-knowledge.mp3?_=2" /><a href="https://feeds.soundcloud.com/stream/1541980267-user-98066669-300-self-hosted-2-offline-knowledge.mp3">https://feeds.soundcloud.com/stream/1541980267-user-98066669-300-self-hosted-2-offline-knowledge.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>None</p>
+<p><strong>SELF-HOSTED 2: Offline Knowledge</strong></p>
+<p>https://www.kiwix.org/en/<br />
+https://library.kiwix.org/?lang=eng&q=wiki<br />
+https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_maxi_2023-05.zim<br />
+https://download.kiwix.org/zim/wiktionary/wiktionary_en_all_maxi_2023-04.zim<br />
+https://download.kiwix.org/zim/other/mdwiki_en_all_maxi_2023-06.zim<br />
+https://download.kiwix.org/zim/other/zimgit-medicine_en_2022-03.zim<br />
+https://download.kiwix.org/zim/other/wikem_en_all_maxi_2021-02.zim<br />
+https://download.kiwix.org/zim/zimit/fas-military-medicine_en_2022-05.zim<br />
+https://download.kiwix.org/zim/ifixit/ifixit_en_all_2023-04.zim<br />
+https://download.kiwix.org/zim/gutenberg/gutenberg_en_all_2023-05.zim<br />
+https://download.kiwix.org/zim/stack_exchange/mechanics.stackexchange.com_en_all_2023-05.zim<br />
+https://download.kiwix.org/zim/videos/urban-prepper_en_all_2023-02.zim<br />
+https://download.kiwix.org/zim/zimit/opentextbooks_en_all_2023-05.zim<br />
+https://download.kiwix.org/zim/other/zimgit-food-preparation_en_2022-03.zim</p>
+<p>https://calibre-ebook.com/<br />
+https://ia800207.us.archive.org/33/items/WhereThereIsNoDoctor-English-DavidWerner/14.DavidWerner-WhereThereIsNoDoctor.pdf<br />
+https://ia800209.us.archive.org/10/items/Where_There_is_no_Dentist/Where_There_is_no_Dentist.pdf<br />
+https://survivallife.com/Ultimate-Survival-Skills-Guide.pdf<br />
+https://www.trueprepper.com/wp-content/uploads/2022/12/Shelters-Shacks-and-Shanties.pdf<br />
+https://www.trueprepper.com/wp-content/uploads/2022/12/LDS-Preparedness-Manual.pdf<br />
+https://pack365.org/wp-content/uploads/2020/03/BasicScoutKnots-All.pdf<br />
+http://www.survivorlibrary.com/library/edible-wild-plants.pdf<br />
+https://www.researchgate.net/profile/Dr-Rajkumar-Yadav/publication/322210506_EDIBLE_MUSHROOMS/links/5a4bbf790f7e9b8284c2ded5/EDIBLE-MUSHROOMS.pdf<br />
+http://www.survivorlibrary.com/library/vegetable-garden-encyclopedia.pdf<br />
+https://seasonedcitizenprepper.com/wp-content/uploads/2014/02/SODIS-manual.pdf<br />
+https://graywolfsurvival.com/wp-content/uploads/Water_-_Water_Treatment.pdf<br />
+https://apps.who.int/iris/bitstream/handle/10665/42052/9789241547024_eng.pdf<br />
+https://www.redcross.org/content/dam/redcross/atg/PDFs/Take_a_Class/FA_CPR_AED_PM_sample_chapter.pdf<br />
+http://www.survivorlibrary.com/library/survival-medicine.pdf<br />
+https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN35831-TM_3-34.47-000-WEB-1.pdf<br />
+http://www.cutelariaartesanal.com.br/downloads/Carpentry_Training_Manual.pdf<br />
+https://www.sherriallen.com/gardenhandbook.pdfhttps://www.fao.org/3/i3556e/i3556e.pdf<br />
+https://www.almanac.com/sites/default/files/webform/pdf/almanac-start-a-garden.pdf</p>
+<p>https://f-droid.org/en/packages/net.osmand.plus/<br />
+https://mealie.io/</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 299</title>
+		<link>https://inteltechniques.com/blog/2023/06/02/the-privacy-security-osint-show-episode-299/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 02 Jun 2023 14:32:31 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3577</guid>
+
+					<description><![CDATA[EPISODE 299-Self-Hosted Part I This week I begin the conversation about self-hosting everything, plus offer the latest privacy news. Direct support for this podcast comes from our privacy services, online training, and latest books. More details can be found at IntelTechniques.com. Thank you for keeping this show ad-free. Listen to THIS episode below. &#160; Listen [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 299-Self-Hosted Part I<br />
+</strong></p>
+<p>This week I begin the conversation about self-hosting everything, plus offer the latest privacy news.</p>
+<p>Direct support for this podcast comes from our <a href="https://inteltechniques.com/services.html">privacy services</a>, <a href="https://www.inteltechniques.net/">online training</a>, and latest <a href="https://inteltechniques.com/books.html">books</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3577-3" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1528902265-user-98066669-299-self-hosted-part-i.mp3?_=3" /><a href="https://feeds.soundcloud.com/stream/1528902265-user-98066669-299-self-hosted-part-i.mp3">https://feeds.soundcloud.com/stream/1528902265-user-98066669-299-self-hosted-part-i.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>Aurora Store<br />
+RaidForums DB</p>
+<p><strong>SELF-HOSTED PART I:</strong></p>
+<p>Conversation</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 298</title>
+		<link>https://inteltechniques.com/blog/2023/05/26/the-privacy-security-osint-show-episode-298/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 26 May 2023 13:24:11 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3574</guid>
+
+					<description><![CDATA[EPISODE 298-OSINT Maintenance This week Jason joins me to talk about the nuances of keeping all your OSINT accounts, tools, and techniques maintained, plus we each share our most recent OSINT successes. Direct support for this podcast comes from our privacy services, online training, and latest books. More details can be found at IntelTechniques.com. Thank [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 298-OSINT Maintenance<br />
+</strong></p>
+<p>This week Jason joins me to talk about the nuances of keeping all your OSINT accounts, tools, and techniques maintained, plus we each share our most recent OSINT successes.</p>
+<p>Direct support for this podcast comes from our <a href="https://inteltechniques.com/services.html">privacy services</a>, <a href="https://www.inteltechniques.net/">online training</a>, and latest <a href="https://inteltechniques.com/books.html">books</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3574-4" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1523234632-user-98066669-298-the-osint-maintenance-grind.mp3?_=4" /><a href="https://feeds.soundcloud.com/stream/1523234632-user-98066669-298-the-osint-maintenance-grind.mp3">https://feeds.soundcloud.com/stream/1523234632-user-98066669-298-the-osint-maintenance-grind.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>BlackHat<br />
+Purism Phone Refund</p>
+<p><strong>OSINT MAINTENANCE:</strong></p>
+<p>Accounts – Investigative and “Burner” Accounts<br />
+Communications<br />
+Equipment<br />
+Professional &amp; Training<br />
+Operational Security<br />
+Google Legacy Reverse Image<br />
+<a href="https://inteltechniques.com/tools/Videos.html">https://inteltechniques.com/tools/Videos.html</a><br />
+<a href="https://inteltechniques.com/tools/Images.html">https://inteltechniques.com/tools/Images.html</a><br />
+Buckets-GrayHatWarfare</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 297</title>
+		<link>https://inteltechniques.com/blog/2023/05/19/the-privacy-security-osint-show-episode-297/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 19 May 2023 14:54:22 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3571</guid>
+
+					<description><![CDATA[EPISODE 297-KYC, 2FA, macOS, &#38; OSINT Updates This week I offer many updates including new Know Your Customer concerns, better 2FA options, my latest macOS Devices digital guide, OSINT tool changes, and how to get your own free TV which of course monitors everything you do. Direct support for this podcast comes from our privacy [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 297-KYC, 2FA, macOS, &amp; OSINT Updates<br />
+</strong></p>
+<p>This week I offer many updates including new Know Your Customer concerns, better 2FA options, my latest macOS Devices digital guide, OSINT tool changes, and how to get your own free TV which of course monitors everything you do.</p>
+<p>Direct support for this podcast comes from our <a href="https://inteltechniques.com/services.html">privacy services</a>, <a href="https://www.inteltechniques.net/">online training</a>, and latest <a href="https://inteltechniques.com/books.html">books</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3571-5" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1517763310-user-98066669-297-kyc-2fa-macos-osint-updates.mp3?_=5" /><a href="https://feeds.soundcloud.com/stream/1517763310-user-98066669-297-kyc-2fa-macos-osint-updates.mp3">https://feeds.soundcloud.com/stream/1517763310-user-98066669-297-kyc-2fa-macos-osint-updates.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>KYC Changes<br />
+Standard Notes 2FA Updates<br />
+<a href="https://inteltechniques.com/book7b.html">https://inteltechniques.com/book7b.html</a><br />
+<a href="https://inteltechniques.com/tools/Videos.html">https://inteltechniques.com/tools/Videos.html</a><br />
+TV Spy</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Extreme Privacy: macOS Devices</title>
+		<link>https://inteltechniques.com/blog/2023/05/18/extreme-privacy-macos-devices/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Thu, 18 May 2023 14:56:16 +0000</pubDate>
+				<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3565</guid>
+
+					<description><![CDATA[Today we are releasing our new digital guide (PDF) about private and secure macOS devices. 10 chapters &#124; 40,000 words &#124; 107 pages &#124; 8.5" x 11" - This digital supplement to Extreme Privacy continues a new approach to our tutorials. It is not a replacement for the printed book, but a much more thorough [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Today we are releasing our new digital guide (PDF) about private and secure macOS devices. 10 chapters | 40,000 words | 107 pages | 8.5" x 11" - This digital supplement to <a href="https://inteltechniques.com/book7.html">Extreme Privacy</a> continues a new approach to our tutorials. It is not a replacement for the printed book, but a much more thorough digital guide about macOS devices. It provides our entire playbook which we use for our clients when we need to sanitize previous Apple IDs; acquire new hardware; configure operating system settings; execute a proper firewall; install applications without Apple ID; configure browsers, VPN, and DNS; establish VoIP connectivity, create virtual machines; and generate custom scripts for daily usage. We also explain all maintenance and best practices for a new private and secure macOS device. All updates are free and delivered digitally. Purchase includes custom macOS scripts and an import file to replicate all firewall rules.</p>
+<p>Full details: <a href="https://inteltechniques.com/book7b.html">https://inteltechniques.com/book7b.html</a></p>
+<p>PREFACE<br />
+INTRODUCTION<br />
+CHAPTER 1: Account Sanitization<br />
+CHAPTER 2: Hardware Configuration<br />
+CHAPTER 3: OS Configuration<br />
+CHAPTER 4: Firewalls<br />
+CHAPTER 5: Applications<br />
+CHAPTER 6: Web Browsers<br />
+CHAPTER 7: VoIP Service<br />
+CHAPTER 8: Virtual Machines<br />
+CHAPTER 9: Custom Scripts<br />
+CHAPTER 10: Updates &amp; Maintenance<br />
+CONCLUSION</p>
+<p><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-3567" src="https://inteltechniques.com/blog/wp-content/uploads/EP-MAC-541x800.png" alt="" width="541" height="800" srcset="https://inteltechniques.com/blog/wp-content/uploads/EP-MAC-541x800.png 541w, https://inteltechniques.com/blog/wp-content/uploads/EP-MAC-203x300.png 203w, https://inteltechniques.com/blog/wp-content/uploads/EP-MAC.png 769w" sizes="(max-width: 541px) 100vw, 541px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 296</title>
+		<link>https://inteltechniques.com/blog/2023/05/12/the-privacy-security-osint-show-episode-296/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 12 May 2023 14:22:36 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3562</guid>
+
+					<description><![CDATA[EPISODE 296-The Argument for a Stock Browser This week I present an argument supporting the use of an untouched stock browser with no privacy and security hardening. Sharpen your pitchforks. Direct support for this podcast comes from our privacy services, online training, and new books for 2023  Open Source Intelligence Techniques (10th Edition), and Extreme [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 296-The Argument for a Stock Browser<br />
+</strong></p>
+<p>This week I present an argument supporting the use of an untouched stock browser with no privacy and security hardening. Sharpen your pitchforks.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new books for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>, and <a href="https://inteltechniques.com/book7a.html">Extreme Privacy: Mobile Devices, Digital Edition</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3562-6" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1512737377-user-98066669-296-the-argument-for-a-stock-browser.mp3?_=6" /><a href="https://feeds.soundcloud.com/stream/1512737377-user-98066669-296-the-argument-for-a-stock-browser.mp3">https://feeds.soundcloud.com/stream/1512737377-user-98066669-296-the-argument-for-a-stock-browser.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>Phone Number Exposure</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>https://vehicleprivacyreport.com/<br />
+https://www.virustotal.com<br />
+Proton Calendar Shared E2EE<br />
+Apple PR contact</p>
+<p><strong>STOCK BROWSERS:</strong></p>
+<p>Discussion</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 295</title>
+		<link>https://inteltechniques.com/blog/2023/04/28/the-privacy-security-osint-show-episode-295/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 28 Apr 2023 13:57:47 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3559</guid>
+
+					<description><![CDATA[EPISODE 295-Breach Data Collection Revisited This week I provide a detailed behind-the-scenes view into our weekly digestion of breach data, offer a new faster query option, and weigh in on the latest privacy updates. Direct support for this podcast comes from our privacy services, online training, and new books for 2023  Open Source Intelligence Techniques [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 295-Breach Data Collection Revisited<br />
+</strong></p>
+<p>This week I provide a detailed behind-the-scenes view into our weekly digestion of breach data, offer a new faster query option, and weigh in on the latest privacy updates.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new books for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>, and <a href="https://inteltechniques.com/book7a.html">Extreme Privacy: Mobile Devices, Digital Edition</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3559-7" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1502182657-user-98066669-295-breach-data-collection-revisited.mp3?_=7" /><a href="https://feeds.soundcloud.com/stream/1502182657-user-98066669-295-breach-data-collection-revisited.mp3">https://feeds.soundcloud.com/stream/1502182657-user-98066669-295-breach-data-collection-revisited.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>Fastmail catchall sending<br />
+Proton Pass<br />
+Twitter Tools</p>
+<p><strong>BREACH DATA COLLECTION REVISITED:</strong></p>
+<p>Why we collect breach data<br />
+How we organize data<br />
+Ripgrep vs. DB vs. QGrep<br />
+Stealer Logs<br />
+Combo Lists<br />
+Breaches<br />
+Leaks<br />
+Ransomware<br />
+Summary</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 294</title>
+		<link>https://inteltechniques.com/blog/2023/04/21/the-privacy-security-osint-show-episode-294/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 21 Apr 2023 14:20:26 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3557</guid>
+
+					<description><![CDATA[EPISODE 294-Preparing for Home Disaster This week I discuss preparation for home disaster along with the latest Privacy, Security, and OSINT news. Direct support for this podcast comes from our privacy services, online training, and new books for 2023  Open Source Intelligence Techniques (10th Edition), and Extreme Privacy: Mobile Devices, Digital Edition. More details can [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 294-Preparing for Home Disaster<br />
+</strong></p>
+<p>This week I discuss preparation for home disaster along with the latest Privacy, Security, and OSINT news.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new books for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>, and <a href="https://inteltechniques.com/book7a.html">Extreme Privacy: Mobile Devices, Digital Edition</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3557-8" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1497625624-user-98066669-294-preparing-for-home-disaster.mp3?_=8" /><a href="https://feeds.soundcloud.com/stream/1497625624-user-98066669-294-preparing-for-home-disaster.mp3">https://feeds.soundcloud.com/stream/1497625624-user-98066669-294-preparing-for-home-disaster.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p><a href="https://inteltechniques.com/tools/Breaches.html">https://inteltechniques.com/tools/Breaches.html</a><br />
+<a href="https://inteltechniques.com/exposure.html">https://inteltechniques.com/exposure.html</a><br />
+VM Update<br />
+Facebook Settlement</p>
+<p><strong>PREPARING FOR HOME DISASTER:</strong></p>
+<p>Discussion</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 293</title>
+		<link>https://inteltechniques.com/blog/2023/04/14/the-privacy-security-osint-show-episode-293/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 14 Apr 2023 13:56:21 +0000</pubDate>
+				<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3554</guid>
+
+					<description><![CDATA[EPISODE 293-Financial Software Considerations This week I discuss some privacy considerations while using financial software applications. Direct support for this podcast comes from our privacy services, online training, and new books for 2023  Open Source Intelligence Techniques (10th Edition), and Extreme Privacy: Mobile Devices, Digital Edition. More details can be found at IntelTechniques.com. Thank you [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 293-Financial Software Considerations<br />
+</strong></p>
+<p>This week I discuss some privacy considerations while using financial software applications.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new books for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>, and <a href="https://inteltechniques.com/book7a.html">Extreme Privacy: Mobile Devices, Digital Edition</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3554-9" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1492355113-user-98066669-293-financial-software-considerations.mp3?_=9" /><a href="https://feeds.soundcloud.com/stream/1492355113-user-98066669-293-financial-software-considerations.mp3">https://feeds.soundcloud.com/stream/1492355113-user-98066669-293-financial-software-considerations.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p><a href="https://inteltechniques.com/book7a.html">https://inteltechniques.com/book7a.html</a><br />
+<a href="https://inteltechniques.com/books.html">https://inteltechniques.com/books.html</a></p>
+<p><strong>FINANCIAL SOFTWARE CONSIDERATIONS:</strong></p>
+<p><a href="https://www.gnucash.org/">https://www.gnucash.org/</a><br />
+<a href="https://scimonocesoftware.com/products/see-finance/">https://scimonocesoftware.com/products/see-finance/</a></p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 292</title>
+		<link>https://inteltechniques.com/blog/2023/03/24/the-privacy-security-osint-show-episode-292/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 24 Mar 2023 14:18:46 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3549</guid>
+
+					<description><![CDATA[EPISODE 292-Vital News &#38; Updates This week I provide several important updates including Android vulnerabilities, Mint Mobile acquisition, BreachForums disappearance, and many new OSINT tools. This is a full show. Direct support for this podcast comes from our privacy services, online training, and new books for 2023  Open Source Intelligence Techniques (10th Edition), and Extreme [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 292-Vital News &amp; Updates<br />
+</strong></p>
+<p>This week I provide several important updates including Android vulnerabilities, Mint Mobile acquisition, BreachForums disappearance, and many new OSINT tools. This is a full show.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new books for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>, and <a href="https://inteltechniques.com/book7a.html">Extreme Privacy: Mobile Devices, Digital Edition</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3549-10" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1476581479-user-98066669-292-vital-news-updates.mp3?_=10" /><a href="https://feeds.soundcloud.com/stream/1476581479-user-98066669-292-vital-news-updates.mp3">https://feeds.soundcloud.com/stream/1476581479-user-98066669-292-vital-news-updates.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p><a href="https://inteltechniques.com/training.html">https://inteltechniques.com/training.html</a><br />
+<a href="https://www.blackhat.com/us-23/training/schedule/index.html#inteltechniques--day-osint-training-30607">https://www.blackhat.com/us-23/training/schedule/index.html#inteltechniques--day-osint-training-30607</a><br />
+<a href="https://googleprojectzero.blogspot.com/2023/03/multiple-internet-to-baseband-remote-rce.html">https://googleprojectzero.blogspot.com/2023/03/multiple-internet-to-baseband-remote-rce.html</a><br />
+Markup app cropping<br />
+Mint &gt; T Mobile<br />
+BeachForums Admin arrested</p>
+<p><strong>OSINT UPDATES:</strong></p>
+<p><a href="https://huggingface.co/spaces/Grynn/Youtube-Whisperer">https://huggingface.co/spaces/Grynn/Youtube-Whisperer</a><br />
+<a href="https://inteltechniques.com/tools/Breaches.html">https://inteltechniques.com/tools/Breaches.html</a><br />
+<a href="https://inteltechniques.com/tools/Vehicle.html">https://inteltechniques.com/tools/Vehicle.html</a><br />
+<a href="https://inteltechniques.com/tools/Name.html">https://inteltechniques.com/tools/Name.html</a><br />
+<a href="https://inteltechniques.com/tools/Email.html">https://inteltechniques.com/tools/Email.html</a></p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 291</title>
+		<link>https://inteltechniques.com/blog/2023/02/28/the-privacy-security-osint-show-episode-291/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Tue, 28 Feb 2023 22:00:19 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3540</guid>
+
+					<description><![CDATA[EPISODE 291-Mobile App Security &#38; Audio Transcription This week I discuss ways your secure mobile device may become not-so-secure (with solutions) and present a great offline translation and transcription option for OSINT investigations. Direct support for this podcast comes from our privacy services, online training, and new books for 2023  Open Source Intelligence Techniques (10th [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 291-Mobile App Security &amp; Audio Transcription<br />
+</strong></p>
+<p>This week I discuss ways your secure mobile device may become not-so-secure (with solutions) and present a great offline translation and transcription option for OSINT investigations.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new books for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>, and <a href="https://inteltechniques.com/book7a.html">Extreme Privacy: Mobile Devices, Digital Edition</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3540-11" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1458303439-user-98066669-291-mobile-app-security-audio-transcription.mp3?_=11" /><a href="https://feeds.soundcloud.com/stream/1458303439-user-98066669-291-mobile-app-security-audio-transcription.mp3">https://feeds.soundcloud.com/stream/1458303439-user-98066669-291-mobile-app-security-audio-transcription.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p><a href="https://inteltechniques.com/book7a.html">https://inteltechniques.com/book7a.html</a></p>
+<p><strong>MOBILE APP SECURITY:</strong></p>
+<p>Conversation</p>
+<p><strong>OSINT:</strong></p>
+<p><a href="https://github.com/openai/whisper">https://github.com/openai/whisper</a></p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 290</title>
+		<link>https://inteltechniques.com/blog/2023/02/20/the-privacy-security-osint-show-episode-290/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Mon, 20 Feb 2023 21:19:26 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3538</guid>
+
+					<description><![CDATA[EPISODE 290-Extreme Privacy: Mobile Devices In this episode I release our first digital guide as part of our new Extreme Privacy series, devote the bulk of the show to mobile device privacy and security, and offer some OSINT updates. Direct support for this podcast comes from our privacy services, online training, and new books for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 290-Extreme Privacy: Mobile Devices<br />
+</strong></p>
+<p>In this episode I release our first digital guide as part of our new Extreme Privacy series, devote the bulk of the show to mobile device privacy and security, and offer some OSINT updates.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new books for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>, and <a href="https://inteltechniques.com/book7a.html">Extreme Privacy: Mobile Devices, Digital Edition</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3538-12" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1451563117-user-98066669-290-extreme-privacy-mobile-devices.mp3?_=12" /><a href="https://feeds.soundcloud.com/stream/1451563117-user-98066669-290-extreme-privacy-mobile-devices.mp3">https://feeds.soundcloud.com/stream/1451563117-user-98066669-290-extreme-privacy-mobile-devices.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>Private &amp; Secure Devices</p>
+<p><strong>OSINT:</strong></p>
+<p>https://cdimage.ubuntu.com/jammy/daily-live/20221020/jammy-desktop-arm64.iso<br />
+https://github.com/soxoj/maigret<br />
+https://webscout.io/lookup/cnn.com</p>
+<p><strong>EXTREME PRIVACY: MOBILE DEVICES</strong></p>
+<p><a href="https://inteltechniques.com/book7a.html">https://inteltechniques.com/book7a.html</a></p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Extreme Privacy: Mobile Devices</title>
+		<link>https://inteltechniques.com/blog/2023/02/16/extreme-privacy-mobile-devices/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2023 18:50:12 +0000</pubDate>
+				<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3533</guid>
+
+					<description><![CDATA[Today we are releasing our new digital guide (PDF) about private and secure mobile devices. 16 chapters &#124; 60,000 words &#124; 135 pages &#124; 8.5" x 11" - This digital supplement to Extreme Privacy presents a whole new approach to our tutorials. It is not a replacement for the printed book, but a much more [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Today we are releasing our new digital guide (PDF) about private and secure mobile devices. 16 chapters | 60,000 words | 135 pages | 8.5" x 11" - This digital supplement to <a href="https://inteltechniques.com/book7.html">Extreme Privacy</a> presents a whole new approach to our tutorials. It is not a replacement for the printed book, but a much more thorough digital guide about mobile devices. It provides our entire playbook which we use for our clients when we need to acquire new hardware, configure a custom operating system, execute proper DNS filtering, enable push services, install applications, obtain anonymous cellular service, establish VoIP connectivity, program redundant data eSIMs, provide secure communications, apply VPN strategies, and troubleshoot the things which will go wrong. We also explain all maintenance and best practices for a new private and secure device. All updates are free and delivered digitally, and all sales support our ad-free podcast.</p>
+<p>Full details: <a href="https://inteltechniques.com/book7a.html">https://inteltechniques.com/book7a.html</a></p>
+<p>INTRODUCTION<br />
+CHAPTER 1: Device Selection<br />
+CHAPTER 2: OS Installation<br />
+CHAPTER 3: Device Configuration<br />
+CHAPTER 4: DNS Configuration<br />
+CHAPTER 5: Push Services<br />
+CHAPTER 6: Application Installation<br />
+CHAPTER 7: Cellular Service<br />
+CHAPTER 8: VoIP Service<br />
+CHAPTER 9: Data Service<br />
+CHAPTER 10: Secure Communications<br />
+CHAPTER 11: VPN Configuration<br />
+CHAPTER 12: Device Customization<br />
+CHAPTER 13: Maintenance &amp; Troubleshooting<br />
+CHAPTER 14: Daily Usage &amp; Best Practices<br />
+CHAPTER 15: Reset and Reversal<br />
+CHAPTER 16: Apple iOS Considerations<br />
+CONCLUSION</p>
+<p><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-3534" src="https://inteltechniques.com/blog/wp-content/uploads/EP-MD-566x800.png" alt="" width="566" height="800" srcset="https://inteltechniques.com/blog/wp-content/uploads/EP-MD-566x800.png 566w, https://inteltechniques.com/blog/wp-content/uploads/EP-MD-212x300.png 212w, https://inteltechniques.com/blog/wp-content/uploads/EP-MD-768x1086.png 768w, https://inteltechniques.com/blog/wp-content/uploads/EP-MD.png 807w" sizes="(max-width: 566px) 100vw, 566px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 289</title>
+		<link>https://inteltechniques.com/blog/2023/02/10/the-privacy-security-osint-show-episode-289/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 10 Feb 2023 15:44:01 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3531</guid>
+
+					<description><![CDATA[EPISODE 289-Combo Lists &#38; Extreme Privacy Series In this episode I discuss the risks (and benefits) of combo lists and introduce our new Extreme Privacy Series. Direct support for this podcast comes from our privacy services, online training, and new book for 2023  Open Source Intelligence Techniques (10th Edition). More details can be found at [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 289-Combo Lists &amp; Extreme Privacy Series<br />
+</strong></p>
+<p>In this episode I discuss the risks (and benefits) of combo lists and introduce our new Extreme Privacy Series.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new book for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3531-13" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1444118782-user-98066669-289-combo-lists-extreme-privacy-series.mp3?_=13" /><a href="https://feeds.soundcloud.com/stream/1444118782-user-98066669-289-combo-lists-extreme-privacy-series.mp3">https://feeds.soundcloud.com/stream/1444118782-user-98066669-289-combo-lists-extreme-privacy-series.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO:</strong></p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>Introducing Extreme Privacy: The Series</p>
+<p><strong>OSINT:</strong></p>
+<p>Eyewitness path update<br />
+Tools.zip html &amp; api update</p>
+<p><strong>COMBO LISTS:</strong></p>
+<p>Discussion</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 288</title>
+		<link>https://inteltechniques.com/blog/2023/01/27/the-privacy-security-osint-show-episode-288/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 27 Jan 2023 15:29:38 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3528</guid>
+
+					<description><![CDATA[EPISODE 288-Privacy, Security, &#38; OSINT Updates In this episode, I discuss the latest Privacy &#38; Security news, and present several new OSINT Techniques. Direct support for this podcast comes from our privacy services, online training, and new book for 2023  Open Source Intelligence Techniques (10th Edition). More details can be found at IntelTechniques.com. Thank you [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 288-Privacy, Security, &amp; OSINT Updates<br />
+</strong></p>
+<p>In this episode, I discuss the latest Privacy &amp; Security news, and present several new OSINT Techniques.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new book for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3528-14" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1433819584-user-98066669-288-privacy-security-osint-updates.mp3?_=14" /><a href="https://feeds.soundcloud.com/stream/1433819584-user-98066669-288-privacy-security-osint-updates.mp3">https://feeds.soundcloud.com/stream/1433819584-user-98066669-288-privacy-security-osint-updates.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO</strong>:</p>
+<p>None</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>Mint Mobile &gt; T-Mobile<br />
+T-Mobile "Breach"<br />
+URL Manipulation</p>
+<p><strong>OSINT:</strong></p>
+<p>https://www.judyrecords.com/<br />
+https://filmot.com/<br />
+https://columbus.elmasy.com/lookup/judgenothing.com<br />
+http://web.archive.org/web/*/judgenothing.com/*</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://feeds.soundcloud.com/stream/1433819584-user-98066669-288-privacy-security-osint-updates.mp3" length="0" type="audio/mpeg" />
+
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 287</title>
+		<link>https://inteltechniques.com/blog/2023/01/06/the-privacy-security-osint-show-episode-287/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 06 Jan 2023 15:10:44 +0000</pubDate>
+				<category><![CDATA[Magazine]]></category>
+		<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3525</guid>
+
+					<description><![CDATA[EPISODE 287-Listener Questions, UNREDACTED 5, &#38; OSINT 10 This week I present the latest issue of UNREDACTED Magazine, publish my new OSINT book, and tackle numerous listener questions. Direct support for this podcast comes from our privacy services, online training, and new book for 2023  Open Source Intelligence Techniques (10th Edition). More details can be [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 287-Listener Questions, UNREDACTED 5, &amp; OSINT 10<br />
+</strong></p>
+<p>This week I present the latest issue of UNREDACTED Magazine, publish my new OSINT book, and tackle numerous listener questions.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new book for 2023  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (10th Edition)</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3525-15" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1418007349-user-98066669-287-listener-questions-unredacted-5-osint-10.mp3?_=15" /><a href="https://feeds.soundcloud.com/stream/1418007349-user-98066669-287-listener-questions-unredacted-5-osint-10.mp3">https://feeds.soundcloud.com/stream/1418007349-user-98066669-287-listener-questions-unredacted-5-osint-10.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO</strong>:</p>
+<p>No Agenda Podcast</p>
+<p><strong>UNREDACTED 005:</strong></p>
+<p><a href="https://inteltechniques.com/magazine.html">https://inteltechniques.com/magazine.html</a></p>
+<p><strong>OSINT 10:</strong></p>
+<p><a href="https://inteltechniques.com/book1.html">https://inteltechniques.com/book1.html</a><br />
+<a href="https://inteltechniques.com/tools">https://inteltechniques.com/tools</a></p>
+<p><strong>LISTENER QUESTIONS:</strong></p>
+<p>Conversation with Naomi Brockwell from <a href="https://nbtv.media">nbtv.media</a></p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+OSINT Techniques (10th): <a href="https://amzn.to/3VIlP74">https://amzn.to/3VIlP74</a><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://feeds.soundcloud.com/stream/1418007349-user-98066669-287-listener-questions-unredacted-5-osint-10.mp3" length="0" type="audio/mpeg" />
+
+			</item>
+		<item>
+		<title>UNREDACTED Magazine Issue 005</title>
+		<link>https://inteltechniques.com/blog/2023/01/02/unredacted-magazine-issue-005/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Mon, 02 Jan 2023 15:26:28 +0000</pubDate>
+				<category><![CDATA[Magazine]]></category>
+		<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3522</guid>
+
+					<description><![CDATA[The FIFTH issue of UNREDACTED Magazine is now available for FREE: https://inteltechniques.com/magazine.html Many thanks to our sponsors Fortify24x7, MySudo, Bitwarden, Social Links, and Investigator's Toolbox. This issue would not be free without them.]]></description>
+										<content:encoded><![CDATA[<p>The FIFTH issue of UNREDACTED Magazine is now available for FREE:</p>
+<p><a href="https://inteltechniques.com/magazine.html">https://inteltechniques.com/magazine.html</a></p>
+<p>Many thanks to our sponsors <a href="https://www.fortify24x7.com/" target="_blank" rel="noopener">Fortify24x7</a>, <a href="https://www.mysudo.com/bazzell" target="_blank" rel="noopener">MySudo</a>, <a href="https://bitwarden.com/secure/" target="_blank" rel="noopener">Bitwarden</a>, <a href="https://sociallinks.io/request-demo-v2?utm_source=unredacted&amp;utm_campaign=unredacted&amp;utm_term=journal-revolutionary" target="_blank" rel="noopener">Social Links</a>, and <a href="https://www.investigators-toolbox.com/" target="_blank" rel="noopener">Investigator's Toolbox</a>. This issue would not be free without them.</p>
+<p><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-3523" src="https://inteltechniques.com/blog/wp-content/uploads/005-614x800.png" alt="" width="614" height="800" srcset="https://inteltechniques.com/blog/wp-content/uploads/005-614x800.png 614w, https://inteltechniques.com/blog/wp-content/uploads/005-230x300.png 230w, https://inteltechniques.com/blog/wp-content/uploads/005.png 688w" sizes="(max-width: 614px) 100vw, 614px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>OSINT Techniques 10th Edition</title>
+		<link>https://inteltechniques.com/blog/2023/01/01/osint-techniques-10th-edition/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Sun, 01 Jan 2023 19:50:18 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3519</guid>
+
+					<description><![CDATA[The Tenth Edition of my OSINT Book is now available for purchase. Full details about the updates can be found at: https://inteltechniques.com/book1.html I sincerely thank everyone for their interest in OSINT over the past decade. It has been a thrill playing a small role in the journey.]]></description>
+										<content:encoded><![CDATA[<p>The Tenth Edition of my OSINT Book is now available for purchase. Full details about the updates can be found at:</p>
+<p><a href="https://inteltechniques.com/book1.html">https://inteltechniques.com/book1.html</a></p>
+<p>I sincerely thank everyone for their interest in OSINT over the past decade. It has been a thrill playing a small role in the journey.</p>
+<p><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-3520" src="https://inteltechniques.com/blog/wp-content/uploads/Cover.3D-483x800.png" alt="" width="483" height="800" srcset="https://inteltechniques.com/blog/wp-content/uploads/Cover.3D-483x800.png 483w, https://inteltechniques.com/blog/wp-content/uploads/Cover.3D-181x300.png 181w, https://inteltechniques.com/blog/wp-content/uploads/Cover.3D.png 663w" sizes="(max-width: 483px) 100vw, 483px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>The Privacy, Security, &#038; OSINT Show &#8211; Episode 286</title>
+		<link>https://inteltechniques.com/blog/2022/12/16/the-privacy-security-osint-show-episode-286/</link>
+		
+		<dc:creator><![CDATA[michaelbazzell]]></dc:creator>
+		<pubDate>Fri, 16 Dec 2022 14:49:44 +0000</pubDate>
+				<category><![CDATA[OSINT]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Security]]></category>
+		<guid isPermaLink="false">https://inteltechniques.com/blog/?p=3515</guid>
+
+					<description><![CDATA[EPISODE 286-Closing Out 2022 This week I offer some year-end privacy and security considerations, disclose another benefit of breach data, and announce the annual listener questions show. Direct support for this podcast comes from our privacy services, online training, and new books for 2022: Extreme Privacy (4th Edition) and  Open Source Intelligence Techniques (9th Edition). [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>EPISODE 286-Closing Out 2022<br />
+</strong></p>
+<p>This week I offer some year-end privacy and security considerations, disclose another benefit of breach data, and announce the annual listener questions show.</p>
+<p>Direct support for this podcast comes from our privacy services, online training, and new books for 2022: <a href="https://inteltechniques.com/book7.html">Extreme Privacy (4th Edition)</a> and  <a href="https://inteltechniques.com/book1.html">Open Source Intelligence Techniques (9th Edition)</a>. More details can be found at <a href="https://inteltechniques.com">IntelTechniques.com</a>. Thank you for keeping this show ad-free.</p>
+<p>Listen to <strong>THIS</strong> episode below.</p>
+<audio class="wp-audio-shortcode" id="audio-3515-16" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="https://feeds.soundcloud.com/stream/1404064933-user-98066669-286-closing-out-2022.mp3?_=16" /><a href="https://feeds.soundcloud.com/stream/1404064933-user-98066669-286-closing-out-2022.mp3">https://feeds.soundcloud.com/stream/1404064933-user-98066669-286-closing-out-2022.mp3</a></audio>
+<p>&nbsp;</p>
+<p>Listen to <strong>PAST</strong> episodes at <a href="https://inteltechniques.com/podcast.html">https://inteltechniques.com/podcast.html</a></p>
+<p>or Subscribe at: <a href="http://feeds.soundcloud.com/users/soundcloud:users:261098918/sounds.rss" target="_blank" rel="noopener">RSS</a> / <a href="https://itunes.apple.com/us/podcast/complete-privacy-security/id1165843330" target="_blank" rel="noopener">Apple</a> / <a href="http://www.stitcher.com/podcast/michael-bazzell/the-complete-privacy-security-podcast" target="_blank" rel="noopener">Stitcher </a> / <a href="https://open.spotify.com/show/6QPWpZJ6bRTdbkI7GgLHBM" target="_blank" rel="noopener">Spotify</a> / <a href="https://www.iheart.com/podcast/269-the-privacy-security-osint-69295764/" target="_blank" rel="noopener">iHeart</a> / <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjI2MTA5ODkxOC9zb3VuZHMucnNz" target="_blank" rel="noopener">Google</a></p>
+<hr />
+<p><strong>SHOW NOTES:</strong></p>
+<p><strong>INTRO</strong>:</p>
+<p>Jeopardy!</p>
+<p><strong>NEWS &amp; UPDATES:</strong></p>
+<p>Listener Questions<br />
+OSINT Techniques Book<br />
+UNREDACTED Magazine<br />
+<a href="https://inteltechniques.com/blog/2022/12/12/uncovering-a-stalker-with-breach-data/">https://inteltechniques.com/blog/2022/12/12/uncovering-a-stalker-with-breach-data/</a></p>
+<p><strong>CLOSING OUT 2022:</strong></p>
+<p>Clean Devices<br />
+Update Devices<br />
+Scan Devices<br />
+Backups<br />
+Comms Audit<br />
+Home security audit<br />
+Financial Audit</p>
+<hr />
+<p>Free Guides:<a href="https://inteltechniques.com/links.html"> https://inteltechniques.com/links.html</a></p>
+<p><strong>Affiliate Links:</strong><br />
+Extreme Privacy (4th): <a href="https://amzn.to/3D6aiXp" target="_blank" rel="noopener">https://amzn.to/3D6aiXp</a><br />
+Proton Mail: <a href="https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=7&amp;aff_id=1519</a><br />
+Proton VPN: <a href="https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277" target="_blank" rel="noopener">https://go.getproton.me/aff_c?offer_id=26&amp;aff_id=1519&amp;url_id=277</a></p>
+<hr />
+<p><img decoding="async" loading="lazy" class="size-large wp-image-2399 aligncenter" src="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png" alt="" width="620" height="303" srcset="https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-620x303.png 620w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current-300x147.png 300w, https://inteltechniques.com/blog/wp-content/uploads/Wide.Med_.Current.png 650w" sizes="(max-width: 620px) 100vw, 620px" /></p>
+]]></content:encoded>
+					
+		
+		<enclosure url="https://feeds.soundcloud.com/stream/1404064933-user-98066669-286-closing-out-2022.mp3" length="0" type="audio/mpeg" />
+
+			</item>
+	</channel>
+</rss>
